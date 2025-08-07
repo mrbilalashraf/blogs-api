@@ -23,11 +23,12 @@ app.use(express.urlencoded({ extended: true, limit: '5mb' }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: ['http://localhost:3000', 'https://blogs-site-five.vercel.app'],
   methods: 'GET,POST,PUT,DELETE',
   allowedHeaders: 'Content-Type,Authorization',
   credentials: true,
 }));
+app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
