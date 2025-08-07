@@ -20,7 +20,7 @@ router.post('/', upload.single('contentImage'), (req, res) => {
     return res.status(400).json({ error: 'No content image uploaded' });
   }
 
-  const imageUrl = `http://localhost:4000/images/${req.file.filename}`;
+  const imageUrl = `${req.protocol}://${req.get('host')}/images/${req.file.filename}`;
   console.log('Image URL:', imageUrl);
   res.status(200).json({ url: imageUrl });
 });
