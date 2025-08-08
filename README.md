@@ -57,9 +57,10 @@ http://localhost:4000
 
 ```
 📡 **API Endpoints**
-**Method**	**Endpoint**	**Description**            **Request Body**
-POST	/create	    Create a new blog post	{ title, coverImage, content, createdAt }
-GET	    /getBlogs	Fetch all blog posts	–
+| Method | Endpoint | Description | Request Body |
+| ------ | -------- | ----------- | ------------ |
+| POST | /create | Create a new blog post | { title, coverImage, content, createdAt } |
+| GET | /getBlogs | Fetch all blog posts | – |
 
 ⚠ **Limitations (Current)**
 - **Only Create and Read** operations are available (no Update/Delete yet).
