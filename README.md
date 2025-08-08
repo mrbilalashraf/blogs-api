@@ -62,6 +62,26 @@ http://localhost:4000
 | POST | /create | Create a new blog post | { title, coverImage, content, createdAt } |
 | GET | /getBlogs | Fetch all blog posts | – |
 
+## 📂 Folder Structure
+
+```bash
+
+├── src
+│   ├── bin
+│   │   └── www
+│   ├── database
+│   │   └── sql.js
+│   ├── public
+│   │   └── images
+│   ├── routes
+│   │   └── createBlog.js
+│   │   └── getBlogs.js
+│   │   └── uploadContentImage.js
+├── app.js
+├── package.json
+└── README.md
+
+```
 ⚠ **Limitations (Current)**
 - **Only Create and Read** operations are available (no Update/Delete yet).
 - **No category system** – all blogs are stored without categorization.
