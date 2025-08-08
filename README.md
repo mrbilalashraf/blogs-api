@@ -2,7 +2,7 @@
 A lightweight RESTful API built with Node.js and Express, designed for creating and retrieving blog posts.
 Currently, it supports basic CRUD features (Create & Read) with MySQL as the database. The project is in an early stage, with planned features like category management, user authentication, and more.
 
-🚀 Features (Current)
+🚀 **Features (Current)**
 1. **Create Blog** – Add a new blog post with title, cover image, and content.
 2. **Get Blogs** – Fetch all blog posts from the database.
 3. **Image Upload Support** – Blogs can include an embedded image stored with size validation.
